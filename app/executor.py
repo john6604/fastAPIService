@@ -19,6 +19,6 @@ def ejecutar_codigo(codigo, parametros, detalles_tecnicos):
         if not callable(func):
             return {"error": "No se encontró una función 'ejecutar' válida."}
         resultado = func(parametros)
-        return { resultado }
+        return {"resultado": resultado}
     except Exception as e:
         return {"error": str(e)}
